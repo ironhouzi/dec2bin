@@ -3,16 +3,14 @@
 
 int convert(int n)
 {
-    int x;
     if(n == 0)
-  return 0;
+	return 0;
+
     else {
-	if(n % 2 != 0)
-	    printf("1");
-	else
-	    printf("0");
 
 	convert(n / 2);
+	printf("%d", n % 2);
+
     }
 }
 
